@@ -1,4 +1,5 @@
 '''
+2023-08-26
 파일명:Ex01-1-hello.py
 '''
 print('Hello, Python')
