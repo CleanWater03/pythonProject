@@ -2,7 +2,7 @@ Python
 =============
 
 ##### 안녕하세요, 파이썬 공부방입니다.
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fit-neicebee.tistory.com%2F16&psig=AOvVaw3rDGhpslaAQlmpLFnMO7ha&ust=1693202338523000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMj4s7CU_IADFQAAAAAdAAAAABAh)
+![pooh](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW0Z94iqO01RBz7uaesVFC5hG-J4y-ldNCHg&usqp=CAU)
 ```commandline
 # 코드 영역
 print("Hello, World!")
