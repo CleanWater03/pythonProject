@@ -21,3 +21,4 @@ print('print("Hello, World")', file = fos)
 # file 함수를 통해 saample.py로 위치를 지정함.
 # csv 파일도 이 함수를 통해 여는 것이 가능하다.
 fos.close()
+# 문서를 자동으로 열고 닫고 하는 것도 가능하다.
