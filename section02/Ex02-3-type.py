@@ -5,10 +5,10 @@
     Python 변수는 다른 유형의 데이터를 저장할 수 있으며
     다른 유형은 다른 작업을 수행할 수 있다.
 
-텍스트 유형(문자열) : str - string이라고 읽음.
+텍스트 유형(문자열) : str - 'string'이라고 읽음.
 숫자 유향 : int(정수형), float(실수형)
 시퀀스 유형 : list, tuple, range
-매핑 유형 : dict - dictionary라고 읽음.
+매핑 유형 : dict - 'dictionary'라고 읽음.
 세트 유형 : set
 논리 유형 : bool
 바이너리 유형 : bytes

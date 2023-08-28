@@ -1,5 +1,5 @@
 '''
-파일명: Ex02-2-comment.py
+파일명 : Ex02-2-comment.py
 
 주석(Comment)
     프로그램 소스 코드에 설명을 작성해 둔 부분을 의미

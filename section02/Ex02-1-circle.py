@@ -8,7 +8,7 @@
 import math
 
 # get_area() 함수 정의
-def get_area(radius): # :치고 엔터치면 자동 들여쓰기
+def get_area(radius): # 콜론을 치고 엔터치면 자동 들여쓰기
     """반지름을 입력 받아서 원의 넓이를 반환하는 get_area() 함수"""
     area = math.pi * math.pow(radius, 2)
     return area

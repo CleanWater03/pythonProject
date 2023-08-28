@@ -50,7 +50,7 @@ print(z)
 Ctrl + d 줄복사
 '''
 x = y = z = '꼬부기'
-#한 번에 같은 값을 할당하게 된다.
+# 한 번에 같은 값을 할당하게 된다.
 print(x)
 print(y)
 print(z)
