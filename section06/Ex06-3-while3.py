@@ -1,6 +1,7 @@
 '''
 파일명 : Ex06-3-while3.py
 '''
+# [1, 2, 3, 4]
 my_list = []
 n = 1
 while n != 0:
