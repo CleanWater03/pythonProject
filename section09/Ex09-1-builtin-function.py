@@ -20,3 +20,7 @@ eval() 함수
 expr = input('계산식을 입력하세요 >>> ')
 result = eval(expr)
 print(f'{expr}={result}')
+
+# len() 데이터 길이
+text = 'Hello, World!'
+print(len(text))
