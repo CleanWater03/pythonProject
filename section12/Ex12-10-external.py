@@ -1,30 +1,52 @@
 '''
-파일명: Ex12-7-random.py
+파일명: Ex12-10-external.py
 
-random - 난수 생성 모듈
+라이브러리 - 패키지 집합
+
+패키지
+    모듈의 상위 개념
+    모듈의 집합을 의미한다.
+
+pip - 패키지 관리자 도구
+    PYPL(Python Package Index)에서 패키지를 다운로드 한다.
+    수많은 오픈소스가 저장되어 있는 중앙 저장소
+
+패키지 설치
+pip install 패키지명
+
+패키지 삭제
+pip uninstall 패키지명
+
 '''
-import random
+# 행렬 연산 관련 package
+import numpy as np
 
-# 두 인자 사이 난수
-print(random.randint(1, 10)) # 1 ~ 10
+print(np.sum([1, 2, 3, 4, 5]))
 
-print(random.randrange(10)) # 0 ~ 9
-print(random.randrange(1, 10)) # 1 ~ 9
-print(random.randrange(1, 10, 2)) # 1 ~ 9 홀수만, 1+2..증가
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
 
-# 0이상 1미만
-print(random.random())
+# 각 요소 더하기
+c = a + b
+print(c)
 
-if random.random() < 0.5:
-    print('강화에 성공하였습니다!')
-else:
-    print('강화에 실패하였습니다!')
 
-# choice 함수 - 리스트에서 랜덤
-seasons = ['spring', 'summer', 'fall', 'winter']
-print(random.choice(seasons))
+matrix1 = np.array(
+    [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+)
 
-# shuffle() 함수 - 임의로 섞는 함수
-my_list = [1, 2, 3, 4, 5]
-random.shuffle(my_list)
-print(my_list)
+matrix2 = np.array(
+    [
+        [1, 1, 1],
+        [2, 2, 2],
+        [3, 3, 3]
+    ]
+)
+
+# 두배열 더하기
+result = matrix1 + matrix2
+print(result)

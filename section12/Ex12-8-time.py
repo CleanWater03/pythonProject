@@ -1,30 +1,38 @@
 '''
-파일명 : Ex12-7-random.py
+파일명: Ex12-8-time.py
 
-random - 난수 생성 모듈
+time 모듈
+    시간 처리에 관련된 time 모듈
 '''
-import random
 
-# 두 인자 사이 난수
-print(random.randint(1, 10)) # 1 ~ 10
+import time
+# 1970년 1월 1일 0시 0분 0초(UTC) 부터 현재까지 경과 시관을 반환 (Tiemstamp)
+print(time.time())
 
-print(random.randrange(10)) # 0 ~ 9
-print(random.randrange(1, 10)) # 1 ~ 9
-print(random.randrange(1, 10, 2)) # 1 ~ 9 홀수만, 1+2..증가
+# ctime() 함수 - 인수로 전달된 time을 시간 형식을 갖춰 반환
+print(time.ctime(time.time()))
 
-# 0이상 1미만
-print(random.random())
+# 인수로 전달된 날짜와 지시자를 이용하여 형식을 갖춘
+# 날짜 데이터를 문자열로 반환
+print(time.strftime('%Y-%m-%d %p %H:%M:%S'))
 
-if random.random() < 0.5:
-    print('강화에 성공하였습니다!')
-else:
-    print('강화에 실패하였습니다!')
+print(time.strftime('%Y년 %m월 %d일 %p %H:%M:%S'))
 
-# choice 함수 - 리스트에서 랜덤
-seasons = ['spring', 'summer', 'fall', 'winter']
-print(random.choice(seasons))
+# 만약 인코딩 문제 발생시 아래와 같이 사용하면 된다.
+print(time.strftime(
+    '%Y년 %m월 %d일 %p %H:%M:%S'
+    .encode('unicode-escape')
+    .decode()
+).encode().decode('unicode-escape'))
 
-# shuffle() 함수 - 임의로 섞는 함수
-my_list = [1, 2, 3, 4, 5]
-random.shuffle(my_list)
-print(my_list)
+# 인자 초만큼 시스템 일시중지
+time.sleep(1)
+
+sec = 1
+while True:
+    print(sec)
+    if sec == 10:
+        break
+
+    time.sleep(1)
+    sec += 1
